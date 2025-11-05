@@ -1,4 +1,10 @@
 /* место для вашего кода */
+.uderline_link {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -11,6 +17,7 @@
     display: block;
     justify-self: center;   
 }
+
 .header_logo img {
     display: block;
     width: 148px;
@@ -26,22 +33,27 @@
     font-size: 18px;
     
 }
+
 .header_links-list a{
     text-decoration-thickness: 1px;
 }
+
 .header_links-list-item {
     display:flex;
     align-items: center;
     padding-bottom: 3px;
 }
+
 .header_links-list-item::before {
     content: "o";
     margin-right: 12.48px;
     font-size: 0.7em;
 }
+
 .header_links-list-item-no-dot::before {
     content: none;
 }
+
 .header_links-list-item-no-dot a {
     text-decoration: none;
 }
@@ -55,19 +67,22 @@
     line-height: 24.3px;
   
 }
+
 .header_address {
     justify-self: end;
     padding: 0 18.5px 3px;
 }
+
 .info {
     max-height: 24px;
-   
 }
+
 .address {
     max-height: 49px;
     max-width: 240px;
     padding-top: 1.5px;
 }
+
 .cover {
     position: relative;
     background: url("../images/cover.jpg") center/cover no-repeat;
@@ -226,4 +241,52 @@
     text-underline-offset: 6px;
     text-decoration-thickness: 0.5px;
     margin: 30px 0 0 40px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 2fr;
+    column-gap: 25px;
+    margin-top: 155px;
+}
+
+.about_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: -24.5px;
+}
+
+.about_logo-image {
+    width: 148px;
+}
+
+.about_column {
+    justify-self: center;
+}
+
+.about_column:last-child {
+    justify-self: start;
+    padding-top: 101px;
+}
+
+.about_title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 100px;
+}
+
+.about_text {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 690px;
+}
+
+.second_text {
+    margin-top: 5px;
 }
